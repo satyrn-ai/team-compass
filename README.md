@@ -1,14 +1,14 @@
-# Satyrn-ai team compass
+# Satyrn.ai team compass
 
 *We sail and soar together.*
 
-We've created this repo to help organize ourselves across the team and projects in the Satryn-ai community.
+We've created this repo to help organize ourselves across the team and projects in the Satryn.ai community.
 
 <!-- TODO We will need to update copy and links for this document and others in the repo. -->
 
 ## Why
 
-To build a healthy Satyrn-ai community we want to share how we work and be welcoming, transparent, and inclusive.
+To build a healthy Satyrn.ai community we want to share how we work and be welcoming, transparent, and inclusive.
 If you've got an idea for how this can be improved, please share it by filing an issue.
 
 ## What
@@ -17,7 +17,7 @@ This repo uses [Zensical](https://zensical.org/) and markdown documents to creat
 
 ## Who - Team Membership
 
-We're growing, and we want to recognize all contributors. 
+We're growing, and we want to recognize all contributors.
 You can find out more about the team leads, organizers, and contributors on the
 ["Our team" page]().
 
@@ -30,7 +30,7 @@ See [our team meetings page]() for information about team meetings and how to jo
 - Discord: announcements, team conversations, appreciation, and more
 - Repo issues and pull requests: ideas, experiments and experiment logs, work
 - Satyrn.ai Plaza meetings: By the community, for the community.
-- Team meetings (Web, Engine, Model, Organizers): We use [HackMD](https://hackmd.io/) to collaborate on and create agendas and notes. 
+- Team meetings (Web, Engine, Model, Organizers): We use [HackMD](https://hackmd.io/) to collaborate on and create agendas and notes.
 
 ## How
 
@@ -40,11 +40,14 @@ Please familiarise yourself with our [Code of Conduct](CODE_OF_CONDUCT.md).
 
 ### Governance
 
-See team compass pages.
+> See team compass pages.
 
 ### Appreciation
 
-We have an #appreciation channel on Discord for the community to use.
+We have an `#appreciation` channel on Discord for the community to use.
 All efforts, large and small, are valuable so please share your appreciation.
 
+## Attribution
 
+This repo was inspired by the [JupyterHub Team Compass site](https://compass.hub.jupyter.org/)
+which was started by [Carol Willing](https://github.com/willingc) and the JupyterHub Core Team in 2017. The Team Compass concept has served JupyterHub and Binder as the Project Jupyter ecosystem well for almost a decade.
