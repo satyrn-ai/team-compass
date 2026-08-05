@@ -17,7 +17,9 @@ _venv/
 .pipenv/
 .poetry/
 .uv/
-.pixi/
+# pixi environments
+.pixi/*
+!.pixi/config.toml
 
 # ==========================================
 # PYTHON PACKAGING & BUILDS
@@ -92,4 +94,3 @@ Thumbs.db
 .env
 .env.local
 *.secret
-

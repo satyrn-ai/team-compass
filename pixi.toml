@@ -1,0 +1,10 @@
+[workspace]
+authors = ["Carol Willing <carolcode@willingconsulting.com>"]
+channels = ["conda-forge"]
+name = "team-compass"
+platforms = ["osx-arm64"]
+version = "0.1.0"
+
+[tasks]
+
+[dependencies]
