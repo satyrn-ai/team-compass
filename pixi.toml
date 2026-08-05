@@ -6,6 +6,8 @@ platforms = ["osx-arm64"]
 version = "0.1.0"
 
 [tasks]
+dev = "zensical serve"
+build = "zensical build"
 
 [dependencies]
 zensical = ">=0.0.53,<0.0.54"
