@@ -50,66 +50,19 @@ nav = [
     "team/index.md",
     "team/structure.md",
   ] },
-  # { "Policies and standards" = [
-  #   "index-team_policies.md",
-  #   { "Governance and structure" = [
-  #     "governance.md",
-  #     "team/structure.md",
-  #     { "Satyrn.ai Code of Conduct" = "https://satyrn.ai" },
-  #   ] },
-  #   { "Team practices" = [
-  #     "practices/communication.md",
-  #     "practices/external-communication.md",
-  #     "practices/funding.md",
-  #     "practices/adding-members.md",
-  #     "practices/check-ins.md",
-  #   ] },
-  #   { "Technical practices" = [
-  #     "practices/pull_requests.md",
-  #     "practices/repository-code-standards.md",
-  #     "practices/releases.md",
-  #     "practices/readme-badges.md",
-  #   ] },
-  # ] },
-  # { "Contributor resources" = [
-  #   "index-team_guides.md",
-  #   { "Contributor guide" = [
-  #     "contribute/guide.md",
-  #     "contribute/skills.md",
-  #     "contribute/documentation.md",
-  #     "contribute/llm.md",
-  #   ] },
-  #   { "Team information" = [
-  #     "meetings/index.md",
-  #     "resources/shared-infrastructure.md",
-  #     "resources/milestones.md",
-  #     "contribute/repository-info.md",
-  #     "resources/community-strategy.md",
-  #   ] },
-  # ] },
-  # { "Meetings" = [
-  #   "meetings/index.md",
-  #   { "Plaza" = [
-  #     "meetings/plaza/index.md",
-  #     "meetings/plaza/facilitator-checklist.md",
-  #     "meetings/plaza/2026.md",
-  #   ] },
-  #   { "Web Team" = [
-  #     "meetings/web-team/index.md",
-  #     "meetings/web-team/facilitator-checklist.md",
-  #     "meetings/web-team/2026.md",
-  #   ] },
-  #   { "Engine Team" = [
-  #     "meetings/engine-team/index.md",
-  #     "meetings/engine-team/facilitator-checklist.md",
-  #     "meetings/engine-team/2026.md",
-  #   ] },
-  #    { "Organizing Team" = [
-  #     "meetings/org-team/index.md",
-  #     "meetings/org-team/facilitator-checklist.md",
-  #     "meetings/org-team/2026.md",
-  #   ] },
-  # ] },
+  { "Policies and standards" = [
+    "index-team_policies.md",
+    { "Governance and structure" = [
+      "governance.md",
+      "team/structure.md",
+    ] },
+  ] },
+  { "Contributor resources" = [
+    "index-team_guides.md",
+  ] },
+  { "Meetings" = [
+    "meetings/index.md",
+  ] },
 ]
 
 # With the "extra_css" option you can add your own CSS styling to customize

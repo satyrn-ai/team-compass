@@ -8,15 +8,15 @@
 
 **Team practices** describe our operational policies and practices.
 
-- [Communication](practices/communication.md)
-- [External communication](practices/external-communication.md)
-- [Funding and reimbursements](practices/funding.md)
-- [Adding members](practices/adding-members.md)
-- [Check-ins](practices/check-ins.md)
+- [Communication]()
+- [External communication]()
+- [Funding and reimbursements]()
+- [Adding members]()
+- [Check-ins]()
 
 **Technical practices** describe our standards and processes around technical infrastructure.
 
-- [Pull requests](practices/pull_requests.md)
-- [Repository code standards](practices/repository-code-standards.md)
-- [Releases](practices/releases.md)
-- [README badges](practices/readme-badges.md)
+- [Pull requests]()
+- [Repository code standards]()
+- [Releases]()
+- [README badges]()
