@@ -8,7 +8,7 @@ These meetings - called Plazas - are fully remote and open to anyone, particular
 
 These are some calendars worth following:
 
-- [**Satyrn.ai meeting calendarr**]
+- [**Satyrn.ai meeting calendar**]
 
 
 The meeting calendar is embedded below for quick reference:
