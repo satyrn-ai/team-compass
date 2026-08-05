@@ -8,34 +8,19 @@
 
 [project]
 
-# The site_name is shown in the page header and the browser window title
-#
-# Read more: https://zensical.org/docs/setup/basics/#site_name
 site_name = "Team Compass"
-
-# The site_description is included in the HTML head and should contain a
-# meaningful description of the site content for use by search engines.
-#
-# Read more: https://zensical.org/docs/setup/basics/#site_description
 site_description = "A site for team practices, policies, and resources for Satyrn.ai teams."
-
-# The site_author attribute. This is used in the HTML head element.
-#
-# Read more: https://zensical.org/docs/setup/basics/#site_author
 site_author = "Satyrn.ai Team"
 
 # The site_url is the canonical URL for your site. When building online
 # documentation you should set this.
-# Read more: https://zensical.org/docs/setup/basics/#site_url
 #site_url = "https://www.example.com/"
 
-# The copyright notice appears in the page footer and can contain an HTML
-# fragment.
-#
-# Read more: https://zensical.org/docs/setup/basics/#copyright
 copyright = """
 Copyright &copy; 2026 Satyrn.ai Team
 """
+
+docs_dir = "docs"
 
 # Zensical supports both implicit navigation and explicitly defined navigation.
 # If you decide not to define a navigation here then Zensical will simply
@@ -45,43 +30,28 @@ Copyright &copy; 2026 Satyrn.ai Team
 #
 # Read more: https://zensical.org/docs/setup/navigation/
 nav = [
-  { "Home" = "index.md" },
+  { "Home" = "https://satyrn.ai" },
+  { "Team compass" = [
+      { "Get started" = "index.md", },
+  ] },
   { "Our team" = [
     "team/index.md",
     "team/structure.md",
   ] },
   { "Policies and standards" = [
-    "index-team_policies.md",
+    "index-team-policies.md",
     { "Governance and structure" = [
       "governance.md",
       "team/structure.md",
     ] },
   ] },
   { "Contributor resources" = [
-    "index-team_guides.md",
+    "index-team-guides.md",
   ] },
   { "Meetings" = [
     "meetings/index.md",
   ] },
 ]
-
-# With the "extra_css" option you can add your own CSS styling to customize
-# your Zensical project according to your needs. You can add any number of
-# CSS files.
-#
-# The path provided should be relative to the "docs_dir".
-#
-# Read more: https://zensical.org/docs/customization/#additional-css
-#
-#extra_css = ["stylesheets/extra.css"]
-
-# With the `extra_javascript` option you can add your own JavaScript to your
-# project to customize the behavior according to your needs.
-#
-# The path provided should be relative to the "docs_dir".
-#
-# Read more: https://zensical.org/docs/customization/#additional-javascript
-#extra_javascript = ["javascripts/extra.js"]
 
 # ----------------------------------------------------------------------------
 # Section for configuring theme options
@@ -195,7 +165,7 @@ features = [
     # When section index pages are enabled, documents can be directly attached
     # to sections, which is particularly useful for providing overview pages.
     # https://zensical.org/docs/setup/navigation/#section-index-pages
-    "navigation.indexes",
+    #"navigation.indexes",
 
     # When instant navigation is enabled, clicks on all internal links will be
     # intercepted and dispatched via XHR without fully reloading the page.
@@ -226,7 +196,7 @@ features = [
     # When sections are enabled, top-level sections are rendered as groups in
     # the sidebar for viewports above 1220px, but remain as-is on mobile.
     # https://zensical.org/docs/setup/navigation/#navigation-sections
-    "navigation.sections",
+    #"navigation.sections",
 
     # When tabs are enabled, top-level sections are rendered in a menu layer
     # below the header for viewports above 1220px, but remain as-is on mobile.
@@ -236,7 +206,7 @@ features = [
     # When sticky tabs are enabled, navigation tabs will lock below the header
     # and always remain visible when scrolling down.
     # https://zensical.org/docs/setup/navigation/#sticky-navigation-tabs
-    "navigation.tabs.sticky",
+    #"navigation.tabs.sticky",
 
     # A back-to-top button can be shown when the user, after scrolling down,
     # starts to scroll up again.
