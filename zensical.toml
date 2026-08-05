@@ -20,8 +20,6 @@ copyright = """
 Copyright &copy; 2026 Satyrn.ai Team
 """
 
-docs_dir = "docs"
-
 # Zensical supports both implicit navigation and explicitly defined navigation.
 # If you decide not to define a navigation here then Zensical will simply
 # derive the navigation structure from the directory structure of your
@@ -32,7 +30,7 @@ docs_dir = "docs"
 nav = [
   { "Home" = "https://satyrn.ai" },
   { "Team compass" = [
-      { "Get started" = "index.md", },
+      "index.md",
   ] },
   { "Our team" = [
     "team/index.md",
@@ -79,7 +77,7 @@ nav = [
 # - https://zensical.org/docs/setup/logo-and-icons/#favicon
 # - https://developer.mozilla.org/en-US/docs/Glossary/Favicon
 #
-#favicon = "images/favicon.png"
+favicon = "assets/favicon.png"
 
 # Zensical supports more than 60 different languages. This means that the
 # labels and tooltips that Zensical's templates produce are translated.
