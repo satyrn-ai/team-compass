@@ -10,14 +10,14 @@
 
 site_name = "Team Compass"
 site_description = "A site for team practices, policies, and resources for Satyrn.ai teams."
-site_author = "Satyrn.ai Team"
+site_author = "Satyrn AI Contributors"
 
 # The site_url is the canonical URL for your site. When building online
 # documentation you should set this.
 #site_url = "https://www.example.com/"
 
 copyright = """
-Copyright &copy; 2026 Satyrn.ai Team
+Copyright &copy; 2026 Satyrn AI
 """
 
 # Zensical supports both implicit navigation and explicitly defined navigation.
@@ -258,9 +258,9 @@ logo = "assets/satyrn-logo-light.svg"
 # of suitably licensed fonts. There are options for a normal text font and for
 # a monospaced font used in code blocks.
 # ----------------------------------------------------------------------------
-#[project.theme.font]
-#text = "Inter"
-#code = "Jetbrains Mono"
+[project.theme.font]
+text = "Inter"
+code = "JetBrains Mono"
 
 # ----------------------------------------------------------------------------
 # In the "palette" subsection you can configure options for the color scheme.
