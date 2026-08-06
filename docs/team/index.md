@@ -16,3 +16,13 @@ contributions in Satyrn.ai. These are from the ["all contributors spec"](https:/
 Below is a short table to show what each emoji represents.
 
 TODO: Add emojis that we might want to use: https://allcontributors.org/en/reference/emoji-key/
+
+## Our Teams
+
+- Web Team
+- Engine Team
+- Model Team
+- Notebooks Team
+- Infrastructure and Operations Team
+- Security Team
+- Organizing Team

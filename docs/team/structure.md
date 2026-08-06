@@ -142,6 +142,20 @@ There is no limit to the number of Engine team members.
 
 There is no limit to the number of Models team members.
 
+### Notebooks Team
+
+Notebooks, whether Jupyter or Marimo, are a vehicle for spreading knowledge and uses.
+They are low friction to set up and the combination of prose, code, visualization,
+animation, and interaction give them a consistent way for people to share their knowledge and examples.
+
+#### Expectations and responsibilities
+
+#### How to join
+
+#### Team size
+
+There is no limit to the number of Notebooks team members.
+
 ### Operations and Infrastructure Team
 
 
