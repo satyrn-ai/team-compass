@@ -8,6 +8,8 @@
 
 [project]
 
+edit_uri = "edit/main/docs"
+repo_url = "https://github.com/satyrn-ai/team-compass"
 site_name = "Team Compass"
 site_description = "A site for team practices, policies, and resources for Satyrn.ai teams."
 site_author = "Satyrn AI Contributors"
