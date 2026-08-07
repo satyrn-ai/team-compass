@@ -1,4 +1,4 @@
-# SatrynAI/satyrn-ai/satyrn.ai Code of Conduct
+# SatrynAI/Satyrn AI/satyrn-ai/satyrn.ai Code of Conduct
 
 We aim to make our community welcoming, safe, and respectful.
 
@@ -34,11 +34,11 @@ The following are violations of this Code of Conduct (this is not an exhaustive 
 * Unsolicited DMs - sending uninvited direct messages to community members
 * Retaliation - taking adverse action against someone for making a CoC report
 
-Community members asked to stop any restricted behaviour are expected to comply immediately.
+Community members asked to stop any inappropriate behaviour are expected to comply immediately.
 
 ## Reporting
 
-If you witness or experience a violation, please report it to the CoC team at [maybe we get a coc email?]. All reports will be handled with confidentiality and care.
+If you witness or experience a violation, please report it to the CoC team. All reports will be handled with confidentiality and care.
 
 ## Consequences
 
@@ -53,7 +53,7 @@ The CoC team will use their discretion and judgement in all cases. This ladder i
 
 ## Enforcement
 
-_to be completed_
+The Code of Conduct team will enforce the Code of Conduct for the community's health.
 
 ## Scope
 
@@ -63,6 +63,4 @@ This Code of Conduct applies to all community spaces including our Discord serve
 
 This Code of Conduct is primarily adapted from the Django Code of Conduct, which is itself adapted from the Contributor Covenant v3.0. Additional reference was drawn from the EuroPython Society Code of Conduct, the Python Software Foundation Code of Conduct, and the Jupyter Code of Conduct.
 
-All are licensed under Creative Commons Attribution.
-
-In the absence of this community's own CoC, we have temporarily adopted the Contributor Covenant v3.0.
+All are licensed under [Creative Commons Attribution](https://creativecommons.org/licenses/by/3.0/).
