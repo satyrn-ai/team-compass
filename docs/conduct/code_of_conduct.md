@@ -31,7 +31,7 @@ The following are violations of this Code of Conduct (this is not an exhaustive 
 * Violating confidentiality - sharing someone's private information without permission, including doxxing
 * Violent behaviours - causing, encouraging, or threatening violence or harm toward any person or group
 * Discouraging involvement - acting in ways that push others out of the community
-* Unsolicited DMs - sending uninvited direct messages to community members
+* Repeated, unsolicited, and unwelcome DMs - sending uninvited direct messages to community members
 * Retaliation - taking adverse action against someone for making a CoC report
 
 Community members asked to stop any inappropriate behaviour are expected to comply immediately.
@@ -39,6 +39,8 @@ Community members asked to stop any inappropriate behaviour are expected to comp
 ## Reporting
 
 If you witness or experience a violation, please report it to the CoC team. All reports will be handled with confidentiality and care.
+
+The organising team currently serves as the CoC team, until the CoC committee is seated.
 
 ## Consequences
 
@@ -64,3 +66,8 @@ This Code of Conduct applies to all community spaces including our Discord serve
 This Code of Conduct is primarily adapted from the Django Code of Conduct, which is itself adapted from the Contributor Covenant v3.0. Additional reference was drawn from the EuroPython Society Code of Conduct, the Python Software Foundation Code of Conduct, and the Jupyter Code of Conduct.
 
 All are licensed under [Creative Commons Attribution](https://creativecommons.org/licenses/by/3.0/).
+
+## Notes
+
+Draft submitted: 2026-08-06
+Date approved:
