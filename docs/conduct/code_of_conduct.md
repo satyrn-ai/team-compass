@@ -69,5 +69,7 @@ All are licensed under [Creative Commons Attribution](https://creativecommons.or
 
 ## Notes
 
+This document is a living document, and it will change and adapt alongside our community as necessary.
+
 Draft submitted: 2026-08-06
 Date approved:
