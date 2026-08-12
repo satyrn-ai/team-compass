@@ -38,7 +38,9 @@ Community members asked to stop any inappropriate behaviour are expected to comp
 
 ## Reporting
 
-If you witness or experience a violation, please report it to the CoC team. All reports will be handled with confidentiality and care.
+If you witness or experience a violation, please report it to the CoC team: [Report an incident to the CoC Team](mailto:coc@satyrn.ai)
+
+All reports will be handled with confidentiality and care.
 
 The organising team currently serves as the CoC team, until the CoC committee is seated.
 
