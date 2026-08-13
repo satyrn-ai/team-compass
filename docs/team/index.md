@@ -12,7 +12,7 @@ For information about what these teams mean and how you can join, see [Team stru
 | Engine Team | Experiments with tooling to support the use of local models | Łukasz |
 | Model Team | Experiments with local models | Michał , Zsofia |
 | Education and Notebooks Team | Create and maintain [satyrn-zen learning content](https://github.com/satyrn-ai/satyrn-zen) | Emma, Carol |
-| Infrastructure and Operations Team | Keeps the Saturn.ai platform running smoothly | Pelle |
+| Infrastructure and Operations Team | Keeps the Satyrn.ai platform running smoothly | Pelle |
 | Security Team | Works with infrastructure and operations to secure repos and deployments | Mike |
 
 ## Co-pilots
