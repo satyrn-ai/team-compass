@@ -23,7 +23,7 @@ You can find out more about the team leads, organizers, and contributors on the
 
 ## When - Team Meetings
 
-See [our team meetings page](https://satyrn-ai.github.io/team-compass/meetings/) for information about team meetings and how to join.
+See [our team meetings page](meetings/) for information about team meetings and how to join.
 
 ## Where - Satyrn.ai spaces
 
