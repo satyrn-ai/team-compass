@@ -13,7 +13,7 @@ If you've got an idea for how this can be improved, please share it by filing an
 
 ## What
 
-This repo uses [Zensical](https://zensical.org/) and markdown documents to create the [Satyrn.ai Team Compass site]().
+This repo uses [Zensical](https://zensical.org/) and markdown documents to create the [Satyrn.ai Team Compass site](https://satyrn-ai.github.io/team-compass/).
 
 ## Who - Team Membership
 
@@ -23,7 +23,7 @@ You can find out more about the team leads, organizers, and contributors on the
 
 ## When - Team Meetings
 
-See [our team meetings page]() for information about team meetings and how to join.
+See [our team meetings page](https://satyrn-ai.github.io/team-compass/meetings/) for information about team meetings and how to join.
 
 ## Where - Satyrn.ai spaces
 
