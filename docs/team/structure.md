@@ -48,7 +48,7 @@ Comprised of any individuals that have made significant contributions to the pro
 
 #### Expectations and responsibilities
 
-- Abide by the [Satyrn.ai Code of Conduct]().
+- Abide by the [Satyrn.ai Code of Conduct](../conduct/code_of_conduct.md).
 - Generally do what they can to support the project.
 
 #### How to join
@@ -206,4 +206,4 @@ To do so, they should notify the other team members in our Team Compass, and add
 
 ### Removing team members
 
-If a team member violates the [Satyrn.ai Code of Conduct](), they will be removed from team membership permanently (including from the Satyrn.ai org in general).
+If a team member violates the [Satyrn.ai Code of Conduct](../conduct/code_of_conduct.md), they will be removed from team membership permanently (including from the Satyrn.ai org in general).
