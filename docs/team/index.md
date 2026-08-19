@@ -10,7 +10,7 @@ For information about what these teams mean and how you can join, see [Team stru
 | Education and Notebooks Team | Creates and maintains [satyrn-zen learning content](https://github.com/satyrn-ai/satyrn-zen) | Emma Cooke, Carol Willing |
 | Engine Team | Experiments with tooling to support the use of local models | Łukasz Zieniewicz, Nicola Jordan |
 | Web Team | Website, design, communications | Laura Summers, Emma Cooke |
-| Model Team | Experiments with local models | Michał Karzyński, Zsófia |
+| Model Team | Experiments with local models | Michał Karzyński, Zsófia Kálosi |
 | Infrastructure & Security Team | Keeps Satyrn secure & running smoothly | Pelle Koster, Mike Fiedler |
 | Organizing Team | Keeps the team organized and on track as well as looking at the big picture | Emma Cooke, Daria Linhart Grudzień |
 
