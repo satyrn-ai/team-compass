@@ -7,18 +7,17 @@ For information about what these teams mean and how you can join, see [Team stru
 
 | Team | Description | Co-Leads |
 |------|-------------|----------|
-| Organizing Team | Keeps the team organized and on track as well as looking at the big picture | Daria |
-| Web Team | Website, design, communications | Laura |
-| Engine Team | Experiments with tooling to support the use of local models | Łukasz |
-| Model Team | Experiments with local models | Michał , Zsofia |
-| Education and Notebooks Team | Create and maintain [satyrn-zen learning content](https://github.com/satyrn-ai/satyrn-zen) | Emma, Carol |
-| Infrastructure and Operations Team | Keeps the Satyrn.ai platform running smoothly | Pelle |
-| Security Team | Works with infrastructure and operations to secure repos and deployments | Mike |
+| Education and Notebooks Team | Creates and maintains [satyrn-zen learning content](https://github.com/satyrn-ai/satyrn-zen) | Emma Cooke, Carol Willing |
+| Engine Team | Experiments with tooling to support the use of local models | Łukasz Zieniewicz, Nicola |
+| Web Team | Website, design, communications | Laura Summers, Emma Cooke |
+| Model Team | Experiments with local models | Michał Karzyński, Zsófia |
+| Infrastructure & Security Team | Keeps Satyrn secure & running smoothly | Pelle Koster, Mike Fiedler |
+| Organizing Team | Keeps the team organized and on track as well as looking at the big picture | Emma Cooke, Daria Linhart Grudzień |
 
 ## Co-pilots
 
-Paul's Europython keynote speech kicked off the Satyrn AI project.
-Paul and Carol have been discussing the idea of Satyrn since the start of 2026,
+Paul Everitt's [Europython keynote talk](https://www.youtube.com/watch?v=F7pc-YxxZAc) kicked off the Satyrn AI project.
+Paul and Carol Willing have been discussing the idea of Satyrn since the start of 2026,
 and we are excited to bring it to life with the energy of our talented, generous contributors.
 
 ## All Contributors
