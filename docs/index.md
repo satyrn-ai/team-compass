@@ -60,4 +60,4 @@ the burden and success.
 
 ## Code of Conduct
 
-The Satyrn.ai community follows the [Satyrn.ai Code of Conduct]().
+The Satyrn.ai community follows the [Satyrn.ai Code of Conduct](conduct/code_of_conduct.md).
