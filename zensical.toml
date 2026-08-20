@@ -40,6 +40,7 @@ nav = [
   ] },
   { "Policies and standards" = [
     "index-team-policies.md",
+    "conduct/code_of_conduct.md",
     { "Governance and structure" = [
       "governance.md",
       "team/structure.md",

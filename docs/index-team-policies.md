@@ -4,7 +4,7 @@
 
 - [Governance](governance.md)
 - [Team structure and responsibilities](team/structure.md)
-- [Satyrn.aiCode of Conduct]()
+- [Satyrn.ai Code of Conduct](conduct/code_of_conduct.md)
 
 **Team practices** describe our operational policies and practices.
 
