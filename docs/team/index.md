@@ -16,8 +16,9 @@ For information about what these teams mean and how you can join, see [Team stru
 
 ## Co-pilots
 
-Paul Everitt's [EuroPython keynote talk](https://www.youtube.com/watch?v=F7pc-YxxZAc) kicked off the Satyrn AI project.
-Paul and Carol Willing have been discussing the idea of Satyrn since the start of 2026,
+Paul Everitt's [EuroPython keynote speech](https://www.youtube.com/watch?v=F7pc-YxxZAc) kicked off the Satyrn AI project.
+Paul and Carol have been discussing the idea of Satyrn since the start of 2026,
+
 and we are excited to bring it to life with the energy of our talented, generous contributors.
 
 ## All Contributors
