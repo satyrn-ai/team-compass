@@ -52,6 +52,9 @@ nav = [
   { "Meetings" = [
     "meetings/index.md",
   ] },
+  { "Team updates" = [
+    "team-updates/index.md",
+  ] },
 ]
 
 # ----------------------------------------------------------------------------
