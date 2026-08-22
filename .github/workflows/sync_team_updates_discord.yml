@@ -48,19 +48,22 @@ jobs:
             [ -z "$file" ] && continue
             title=$(grep -m1 '^# ' "$file" | sed 's/^# *//')
             [ -z "$title" ] && title=$(basename "$file")
+            
             # Drop the heading line and any leading blank lines to get just the body.
             body=$(tail -n +2 "$file" | sed '/./,$!d')
             if [ "${#body}" -gt 1500 ]; then
               body="${body:0:1500}…"
             fi
-            # Zensical builds "docs/foo/bar.md" into the page at "/foo/bar/".
+
             page="${file#docs/}"
             link="${SITE_URL%/}/${page%.md}/"
             content=$(printf '🚀 **New team update!**\n**%s**\n\n%s\n\nSee more at team-updates (%s)' "$title" "$body" "$link")
-            # Discord's 2000-char message limit; truncate the assembled content, not just the body.
+            
+            # Handle Discord's 2000-char message limit
             if [ "${#content}" -gt 1999 ]; then
               content="${content:0:1996}…"
             fi
+            
             payload=$(jq -n --arg content "$content" '{content: $content}')
             curl -sf --fail-with-body -H "Content-Type: application/json" -d "$payload" "$DISCORD_WEBHOOK"
           done
