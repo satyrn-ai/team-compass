@@ -1,7 +1,6 @@
 # Weekly team updates
 
-Team leads post weekly updates here as Markdown files. Merging an update to `main`
-automatically announces it in Discord.
+Team leads post weekly updates here as Markdown files. Merging an update to `main` automatically announces it in Discord.
 
 ## Posting an update
 
