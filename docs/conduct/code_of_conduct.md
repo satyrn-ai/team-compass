@@ -1,4 +1,4 @@
-# SatrynAI/Satyrn AI/satyrn-ai/satyrn.ai Code of Conduct
+# SatyrnAI/Satyrn AI/satyrn-ai/satyrn.ai Code of Conduct
 
 We aim to make our community welcoming, safe, and respectful.
 
