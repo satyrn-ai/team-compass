@@ -19,7 +19,7 @@ This repo uses [Zensical](https://zensical.org/) and markdown documents to creat
 
 We're growing, and we want to recognize all contributors.
 You can find out more about the team leads, organizers, and contributors on the
-["Our team" page]().
+["Our team" page](team/index.md).
 
 ## When - Team Meetings
 
