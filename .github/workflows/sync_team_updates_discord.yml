@@ -1,0 +1,69 @@
+name: Sync Team Updates to Discord
+
+# Announces new team updates (docs/team-updates/**) in Discord once
+# they're merged to main.
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - "docs/team-updates/*/*.md"
+
+permissions:
+  contents: read
+
+jobs:
+  notify-discord:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 2
+
+      - name: Find new update files
+        id: changes
+        run: |
+          before="${{ github.event.before }}"
+          # Fall back to the parent commit if "before" isn't a valid ref (e.g. first push).
+          if ! git cat-file -e "$before" 2>/dev/null; then
+            before="${{ github.sha }}^"
+          fi
+          # Only new files trigger a notification; edits to existing updates are silent.
+          files=$(git diff --name-only --diff-filter=A "$before" "${{ github.sha }}" -- 'docs/team-updates/*/*.md' | grep -v '/index\.md$' || true)
+          {
+            echo "files<<FILES_EOF"
+            echo "$files"
+            echo "FILES_EOF"
+          } >> "$GITHUB_OUTPUT"
+
+      - name: Notify Discord
+        if: steps.changes.outputs.files != ''
+        env:
+          DISCORD_WEBHOOK: ${{ secrets.DISCORD_WEBHOOK_URL }}
+          SITE_URL: ${{ vars.SITE_URL || 'https://satyrn-ai.github.io/team-compass' }}
+          FILES: ${{ steps.changes.outputs.files }}
+        run: |
+          echo "$FILES" | while IFS= read -r file; do
+            [ -z "$file" ] && continue
+            title=$(grep -m1 '^# ' "$file" | sed 's/^# *//')
+            [ -z "$title" ] && title=$(basename "$file")
+            
+            # Drop the heading line and any leading blank lines to get just the body.
+            body=$(tail -n +2 "$file" | sed '/./,$!d')
+            if [ "${#body}" -gt 1500 ]; then
+              body="${body:0:1500}…"
+            fi
+
+            page="${file#docs/}"
+            link="${SITE_URL%/}/${page%.md}/"
+            content=$(printf '🚀 **New team update!**\n**%s**\n\n%s\n\nSee more at team-updates (%s)' "$title" "$body" "$link")
+            
+            # Handle Discord's 2000-char message limit
+            if [ "${#content}" -gt 1999 ]; then
+              content="${content:0:1996}…"
+            fi
+            
+            payload=$(jq -n --arg content "$content" '{content: $content}')
+            curl -sf --fail-with-body -H "Content-Type: application/json" -d "$payload" "$DISCORD_WEBHOOK"
+          done
