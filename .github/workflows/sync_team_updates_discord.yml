@@ -65,5 +65,5 @@ jobs:
             fi
             
             payload=$(jq -n --arg content "$content" '{content: $content}')
-            curl -sf --fail-with-body -H "Content-Type: application/json" -d "$payload" "$DISCORD_WEBHOOK"
+            curl -sf -H "Content-Type: application/json" -d "$payload" "$DISCORD_WEBHOOK"
           done
