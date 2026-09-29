@@ -16,11 +16,20 @@ site_author = "Satyrn AI Contributors"
 
 # The site_url is the canonical URL for your site. When building online
 # documentation you should set this.
-#site_url = "https://www.example.com/"
+# Read more: https://zensical.org/docs/setup/basics/#site_url
+# Required for navigation.instant: without it sitemap.xml is empty and instant
+# loading breaks internal navigation/links.
+site_url = "https://satyrn-ai.github.io/team-compass"
+
+# Address for `zensical serve`. 8001 so it can run alongside satyrn-website (8000).
+dev_addr = "localhost:8001"
 
 copyright = """
-Copyright &copy; 2026 Satyrn AI
+&copy; 2026 Satyrn AI &middot; <a href="https://satyrn.ai">Satyrn.ai</a>
 """
+
+extra_css = ["stylesheets/satyrn.css"]
+extra_javascript = ["javascripts/blog-dates.js", "javascripts/space.js", "javascripts/crew.js"]
 
 # Zensical supports both implicit navigation and explicitly defined navigation.
 # If you decide not to define a navigation here then Zensical will simply
@@ -78,7 +87,7 @@ nav = [
 # Read more:
 # - https://zensical.org/docs/customization/#extending-the-theme
 #
-#custom_dir = "overrides"
+custom_dir = "overrides"
 
 # With the "favicon" option you can set your own image to use as the icon
 # browsers will use in the browser title bar or tab bar. The path provided
@@ -88,7 +97,7 @@ nav = [
 # - https://zensical.org/docs/setup/logo-and-icons/#favicon
 # - https://developer.mozilla.org/en-US/docs/Glossary/Favicon
 #
-favicon = "assets/favicon.png"
+favicon = "assets/favicon.svg"
 
 # Zensical supports more than 60 different languages. This means that the
 # labels and tooltips that Zensical's templates produce are translated.
@@ -174,7 +183,7 @@ features = [
     # When section index pages are enabled, documents can be directly attached
     # to sections, which is particularly useful for providing overview pages.
     # https://zensical.org/docs/setup/navigation/#section-index-pages
-    #"navigation.indexes",
+    "navigation.indexes",
 
     # When instant navigation is enabled, clicks on all internal links will be
     # intercepted and dispatched via XHR without fully reloading the page.
