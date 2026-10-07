@@ -15,7 +15,7 @@ a few things that you should do as a new team member:
 1. **"Watch" the [team compass repository](https://github.com/satyrn-ai/team-compass)**
    so that you're notified when team conversations are happening.
 1. **Semi-regularly attend team meetings**. You can find a calendar of upcoming
-   meetings [on the team meetings page]().
+   meetings [on the team meetings page](../meetings/index.md).
 1. **Commit at least 6 months to team membership**. Training and mentoring new
    team members is an investment by the existing team, hence team
    membership requires commitment from both sides. Beyond 6 months, if active
@@ -90,7 +90,7 @@ For example:
 - **Mentor contributors**. Share skills and knowledge, look for opportunities to let others earn and receive responsibility. Grow our tema.
 - **Review pull requests**. Look over the changes others propose in repositories, provide feedback that improves them, and invite others to join you.
 - **Ensure healthy communication**. Put extra effort into building a healthy, productive, friendly community dynamic amongst our community members.
-- **Attend our meetings**. Try to attend our [Team Meetings]() whenever you can.
+- **Attend our meetings**. Try to attend our [Team Meetings](../meetings/index.md) whenever you can.
 
 Organizers generally have heightened privileges (e.g., "Moderator" privileges in a forum, or "Administrator" privileges on a repository).
 They also inherit all responsibilities Satyrn.ai Contributors team.
@@ -197,7 +197,7 @@ Any team members that step down are considered "inactive".
 This means they no longer commit to the responsibilities of their previous team, but they retain their Satyrn.ai Team Membership status for life.
 
 We keep a record of any inactive team members for the team in which they previously served.
-This is both to recognize their contribution, and to have a reference in case they wish to [become active again]().
+This is both to recognize their contribution, and to have a reference in case they wish to [become active again](#return-from-a-break).
 
 ### Return from a break
 

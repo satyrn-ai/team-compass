@@ -19,11 +19,11 @@ This repo uses [Zensical](https://zensical.org/) and markdown documents to creat
 
 We're growing, and we want to recognize all contributors.
 You can find out more about the team leads, organizers, and contributors on the
-["Our team" page](team/index.md).
+["Our team" page](https://satyrn-ai.github.io/team-compass/team/).
 
 ## When - Team Meetings
 
-See [our team meetings page](meetings/) for information about team meetings and how to join.
+See [our team meetings page](https://satyrn-ai.github.io/team-compass/meetings/) for information about team meetings and how to join.
 
 ## Where - Satyrn.ai spaces
 

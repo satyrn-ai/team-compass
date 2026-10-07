@@ -13,7 +13,7 @@ It also has helpful information for team members, like shared infrastructure and
 
     Plaza meetings are regular, all remote meetings where our community can synchronously connect.
 
-    [Click this box to find out more!]()
+    [Click this box to find out more!](meetings/index.md#satyrn-plaza)
 
 
 - **Get started contributing ✨**
@@ -34,8 +34,8 @@ teams, resources for community members, and team practices for
 governance and planning.
 
 - [Our team](team/index.md)
-- [Policies and standards]()
-- [Contributor resources]()
+- [Policies and standards](index-team-policies.md)
+- [Contributor resources](index-team-guides.md)
 
 ## Why have a Team Compass?
 
@@ -46,7 +46,7 @@ As projects and their growth evolve rapidly, the contents of this repo
 should aid us in setting project direction and adjusting the course as
 needed. The repo contains:
 
-- team meeting agendas and archives: [meetings]()
+- team meeting agendas and archives: [meetings](meetings/index.md)
 - direction and action plans
 - communication and culture of respectful teamwork
 - recognitions and team celebrations
