@@ -50,4 +50,6 @@ All efforts, large and small, are valuable so please share your appreciation.
 ## Attribution
 
 This repo was inspired by the [JupyterHub Team Compass site](https://compass.hub.jupyter.org/)
-which was started by [Carol Willing](https://github.com/willingc) and the JupyterHub Core Team in 2017. The Team Compass concept has served JupyterHub and Binder as the Project Jupyter ecosystem well for almost a decade.
+which was started by [Carol Willing](https://github.com/willingc) and the JupyterHub Core Team
+in 2017. The Team Compass concept has served JupyterHub and Binder, as well as the Project Jupyter
+ecosystem, for almost a decade.
