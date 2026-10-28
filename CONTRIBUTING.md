@@ -28,7 +28,7 @@ pixi run dev
 
 This will build an interactive, development web server.
 
-3.  Navigate your browser to <http::/localhost:8000>.
+3.  Navigate your browser to <http::/localhost:8001>.
 
 ### Build the site without running a server.
 
@@ -50,3 +50,37 @@ It's mobile responsive out of the box.
 Pixi performs well for cross platform package management and task management. It is used in many Scientific Python projects where GPU support and different operating systems (Windows, Linux, Mac) are required.
 
 uv, pip and conda should all also work. For the docs build, the only needed dependency is `zensical`.
+
+---
+
+## Repo structure
+
+### `docs`
+
+Content documents:
+- `conduct`
+- `contribute`
+- `meetings`
+- `team`
+- `team-updates`
+- `governance.md`
+- `index-team-guides.md`
+- `index-team-policies.md`
+
+Style and assets:
+- `assets`
+- `javascripts`
+- `stylesheets`
+
+### `overrides`
+
+Templates:
+- `home.html`
+- `main.html`
+
+Partial templates:
+- `partials`
+
+### `scripts`
+
+`dev_config.py` - creates a `.zensical.serve.toml`
