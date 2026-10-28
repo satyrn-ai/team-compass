@@ -5,7 +5,7 @@ The Satyrn.ai community meets periodically to discuss important issues, make dec
 ## Meeting calendar
 
 The community events calendar is embedded below for reference. 
-*Note: The calendar is displayed shown in time zone: (GMT+00:00) United Kingdom Time.*
+*Note: The calendar is shown in time zone: (GMT+00:00) United Kingdom Time.*
 
 <iframe
  title="Satyrn.ai Community Events Calendar"
