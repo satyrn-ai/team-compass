@@ -38,38 +38,11 @@ extra_javascript = ["javascripts/blog-dates.js", "javascripts/space.js", "javasc
 # can be defined using TOML syntax.
 #
 # Read more: https://zensical.org/docs/setup/navigation/
-nav = [
-  { "Home" = "https://satyrn.ai" },
-  { "Team compass" = [
-      "index.md",
-  ] },
-  { "Our team" = [
-    "team/index.md",
-    "team/structure.md",
-  ] },
-  { "Policies and standards" = [
-    "index-team-policies.md",
-    "conduct/code_of_conduct.md",
-    { "Governance and structure" = [
-      "governance.md",
-      "team/structure.md",
-    ] },
-  ] },
-  { "Contributor resources" = [
-    "index-team-guides.md",
-  ] },
-  { "Meetings" = [
-    "meetings/index.md",
-  ] },
-  { "Team updates" = [
-    "team-updates/index.md",
-    "team-updates/community/index.md",
-    "team-updates/education-team/index.md",
-    "team-updates/engine-team/index.md",
-    "team-updates/model-team/index.md",
-    "team-updates/web-team/index.md",
-  ] },
-]
+
+# team-compass currently uses implicit navigation,
+# meaning the navigation structure is derived from the directory structure of the "docs_dir".
+# Over time, this may be replaced with an explicit navigation structure.
+# nav = [ ]
 
 # ----------------------------------------------------------------------------
 # Section for configuring theme options
