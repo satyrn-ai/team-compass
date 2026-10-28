@@ -24,4 +24,4 @@ cmd = "zensical build --strict"
 depends-on = ["clean"]
 
 [dependencies]
-zensical = ">=0.0.53,<0.0.54"
+zensical = ">=0.0.71"
