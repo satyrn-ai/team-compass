@@ -1,21 +1,91 @@
 {% extends "main.html" %}
 
 {#-
-  The landing page. `docs/index.md` opts in with `template: home.html`.
-  Everything else on the site keeps the normal docs layout.
+  The landing page. `src/index.md` opts in with `template: home.html` and
+  `hide: [navigation, toc]`, which drops both sidebars without touching the
+  base template. Everything else on the site keeps the normal docs layout.
+-#}
 
+{#-
   The landing page runs full width, so it wants no sidebar on desktop -- but it
   still needs the mobile drawer, which is the same element.
 
   `hide: navigation` in front matter cannot express that. It sets `hidden` on
   the primary sidebar, and below 1220px the primary sidebar IS the drawer, with
   nothing in the theme's CSS restoring it: the hamburger opens onto an empty
-  panel. So the suppression has to be a media query (`.satyrn-home-nav` in
-  satyrn.css), and this wrapper is its hook. `display: contents` keeps the
-  sidebar a direct flex item of the grid, so the wrapper changes no layout;
-  `super()` renders the theme's own markup, so this does not have to be kept in
-  step with base.html.
+  panel. So the suppression has to be a media query, and this wrapper is its
+  hook. `display: contents` keeps the sidebar a direct flex item of the grid,
+  so the wrapper changes no layout; `super()` renders the theme's own markup,
+  so this does not have to be kept in step with base.html.
 -#}
+{#-
+  The home page title already names the site ("Satyrn — Open, local-first..."),
+  so the theme's " - Satyrn" suffix would say it twice. Screen readers announce
+  this first, and it is what search results and tabs show.
+-#}
+{% block htmltitle %}
+  <title>{{ page.meta.title | e }}</title>
+{% endblock %}
+
 {% block site_nav %}
   <div class="satyrn-home-nav">{{ super() }}</div>
+{% endblock %}
+
+{% block footer %}
+  {# The id="get-involved" anchor this used to carry is gone: Get Involved is a
+     real page now, so the nav links there instead of jumping to the footer. #}
+  <footer class="satyrn-footer">
+    <div class="md-grid satyrn-footer__inner">
+      <div class="satyrn-footer__brand">
+        {# The same inlined mark as the header and drawer, so all three recolour
+           together from the scheme tokens and cannot drift apart. #}
+        <a class="satyrn-footer__home" href="{{ nav.homepage.url | url }}" aria-label="{{ config.site_name | e }} home">
+          {% include "partials/logo.html" %}
+          <span class="satyrn-footer__name">{{ config.site_name | e }}</span>
+        </a>
+        <p class="satyrn-footer__tagline">AI Our Way.</p>
+        {%- if config.extra.social %}
+        <ul class="satyrn-footer__social">
+          {%- for social in config.extra.social %}
+          <li>
+            <a class="satyrn-footer__social-link" href="{{ social.link }}"
+               target="_blank" rel="{{ 'noopener noreferrer me' if 'mastodon' in social.icon else 'noopener noreferrer' }}"
+               title="{{ social.name | e }}" aria-label="{{ social.name | e }}">
+              {%- include ".icons/" ~ social.icon ~ ".svg" -%}
+            </a>
+          </li>
+          {%- endfor %}
+        </ul>
+        {%- endif %}
+      </div>
+      <nav class="satyrn-footer__nav" aria-label="Footer">
+        <div class="satyrn-footer__col">
+          <h2 class="satyrn-footer__heading">Project</h2>
+          <ul>
+            <li><a class="satyrn-footer__link" href="{{ 'mission/' | url }}">Mission</a></li>
+            <li><a class="satyrn-footer__link" href="{{ 'local-first/' | url }}">Local-First</a></li>
+            <li><a class="satyrn-footer__link" href="{{ 'blog/' | url }}">Blog</a></li>
+          </ul>
+        </div>
+        <div class="satyrn-footer__col">
+          <h2 class="satyrn-footer__heading">Community</h2>
+          <ul>
+            {# Points at Get Involved until there is a dedicated community space. #}
+            <li><a class="satyrn-footer__link" href="{{ 'get-involved/' | url }}">Get Involved</a></li>
+            <li><a class="satyrn-footer__link" href="{{ config.extra.discord_url }}">Discord</a></li>
+            <li><a class="satyrn-footer__link" href="https://satyrn-ai.github.io/team-compass/">Team Compass</a></li>
+            <li><a class="satyrn-footer__link" href="https://github.com/satyrn-ai">GitHub</a></li>
+            <li><a class="satyrn-footer__link" href="{{ 'feed.xml' | url }}">RSS feed</a></li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+    <div class="md-grid satyrn-footer__base">
+      <p class="satyrn-footer__credit">{{ config.copyright }}</p>
+      <p class="satyrn-footer__credit">Artwork by the fabulous
+        <a class="satyrn-footer__link satyrn-footer__link--inline"
+           href="https://github.com/summerscope"
+           target="_blank" rel="noopener noreferrer">Laura Summers</a></p>
+    </div>
+  </footer>
 {% endblock %}
