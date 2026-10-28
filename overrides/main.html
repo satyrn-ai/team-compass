@@ -1,22 +1,6 @@
 {% extends "base.html" %}
 
 {#-
-  Collects every `nav` node carrying a `date` into `ns.items`, depth first.
-
-  `nav` is the post database: Zensical has no plugin system, but templates get
-  the full tree with each node's front matter, so listings and the feed are a
-  filter over it. This macro is duplicated in `src/feed.xml` and
-  `partials/nav.html` because MiniJinja macros can only return rendered text,
-  never a list. The duplication is forced, not laziness.
--#}
-{%- macro walk(items, ns) -%}
-  {%- for it in items -%}
-    {%- if it.meta and it.meta.date %}{% set ns.items = ns.items + [it] %}{% endif -%}
-    {%- if it.children %}{{ walk(it.children, ns) }}{% endif -%}
-  {%- endfor -%}
-{%- endmacro -%}
-
-{#-
   Declared up front so the browser knows both schemes are supported before it
   paints the canvas, which reduces the flash of un-themed content. Zensical
   already sets the `color-scheme` CSS property per palette, but emits no meta tag.
@@ -67,7 +51,7 @@
 -#}
 {% block extrahead %}
   {%- set meta = page.meta if page.meta else {} -%}
-  {%- set is_post = meta.date and meta.authors -%}
+  {%- set is_post = page.authors and meta.date -%}
   {%- set og_title = meta.title if meta.title else (page.title if page.title else config.site_name) -%}
   {%- set og_desc = meta.description if meta.description else config.site_description -%}
   {%- set og_image = meta.image if meta.image else config.extra.og_image -%}
@@ -84,44 +68,11 @@
   {%- endif -%}
   {%- if is_post -%}
   <meta property="article:published_time" content="{{ meta.date }}T00:00:00Z">
-  {%- for slug in meta.authors -%}
-  <meta property="article:author" content="{{ config.extra.authors[slug].name | e }}">
+  {%- for a in page.authors -%}
+  <meta property="article:author" content="{{ a.name | e }}">
   {%- endfor -%}
-  {%- set creator = config.extra.authors[meta.authors[0]] -%}
-  {%- if creator.fediverse -%}
-  <meta name="fediverse:creator" content="{{ creator.fediverse }}">
   {%- endif -%}
-  {%- endif -%}
-  <link rel="alternate" type="application/atom+xml" title="{{ config.site_name }}" href="{{ config.site_url }}feed.xml">
-{% endblock %}
-
-{#-
-  Byline, then the page's own prose, then a listing if the page asks for one.
-
-  `index: posts | author | tag` in front matter is what opts a page in, so the
-  blog index, each author page and each tag page share this one block rather
-  than having a template each.
--#}
-{% block content %}
-  {%- if page.meta and page.meta.date and page.meta.authors -%}
-    {% include "partials/post-byline.html" %}
-  {%- endif -%}
-  {{ super() }}
-  {%- if page.meta and page.meta.index -%}
-    {%- set ns = namespace(items=[]) -%}
-    {{- walk(nav.items, ns) -}}
-    <ul class="satyrn-posts">
-    {%- for post in ns.items | sort(attribute="meta.date", reverse=true) -%}
-      {%- if page.meta.index == "posts" -%}
-        {% include "partials/post-item.html" %}
-      {%- elif page.meta.index == "author" and post.meta.authors and page.meta.author in post.meta.authors -%}
-        {% include "partials/post-item.html" %}
-      {%- elif page.meta.index == "tag" and post.meta.tags and page.meta.tag in post.meta.tags -%}
-        {% include "partials/post-item.html" %}
-      {%- endif -%}
-    {%- endfor -%}
-    </ul>
-  {%- endif -%}
+  <link rel="alternate" type="application/rss+xml" title="{{ config.site_name }}" href="{{ config.site_url }}feed.xml">
 {% endblock %}
 
 {#-
