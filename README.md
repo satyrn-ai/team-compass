@@ -44,8 +44,8 @@ Please familiarise yourself with our [Code of Conduct](CODE_OF_CONDUCT.md).
 
 ### Appreciation
 
-We have an `#appreciation` channel on Discord for the community to use.
-All efforts, large and small, are valuable so please share your appreciation.
+We have an `#appreciation-station` channel on Discord for the community to use.
+All efforts, great and small, are valuable, so please share your appreciation.
 
 ## Attribution
 
