@@ -2,11 +2,10 @@
 
 The Satyrn.ai community meets periodically to discuss important issues, make decisions, share ideas, and enjoy one another's company.
 
-## Meeting calendars
+## Meeting calendar
 
-- **Satyrn.ai Calendar**
-
-The community events calendar is embedded below for reference:
+The community events calendar is embedded below for reference. 
+*Note: The calendar is displayed shown in time zone: (GMT+00:00) United Kingdom Time.*
 
 <iframe
  title="Satyrn.ai Community Events Calendar"
