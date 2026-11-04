@@ -2,7 +2,7 @@
 
 Find the right channel for your conversation in the Satyrn Discord server.
 
-All channels are visible to all members except the two private channels, #orgs-private and #infra-sec-private. These are used only in limited circumstances where privacy or confidentiality need to be considered, and are accessible by the organisers.
+All channels are visible to all members except the two private channels, #orgs-private and #infra-sec-private. These are used only in limited circumstances where privacy or confidentiality need to be considered, and are used only by the organisers.
 
 ## Start here
 
