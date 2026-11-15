@@ -63,7 +63,12 @@ jobs:
 
             page="${file#docs/}"
             link="${SITE_URL%/}/${page%.md}/"
-            content=$(printf '%s\n**%s**\n\n%s\n\nSee more at %s (%s)' "$heading" "$title" "$body" "$section" "$link")
+            if [ "$section" = meetings ]; then
+              # Minutes run long, so post the title and a link instead of the body.
+              content=$(printf '%s\n**%s**\n\nRead the minutes (%s)' "$heading" "$title" "$link")
+            else
+              content=$(printf '%s\n**%s**\n\n%s\n\nSee more at %s (%s)' "$heading" "$title" "$body" "$section" "$link")
+            fi
             
             # Handle Discord's 2000-char message limit
             if [ "${#content}" -gt 1999 ]; then
